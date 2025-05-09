@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap');
+
+/*------ GENERAL STYLE ------*/
+*{
+	font-family: 'Montserrat', sans-serif;
+}
+
+/*------ SECTIONS ------*/
+
+/*------> NAV*/
+
+.navbar-brand img {
+	width: 90px;
+}
+
+/*.navbar a{
+	font-weight: 600;
+	font-size: 18px;
+}*/
+
+.nav-link:hover {
+	color: cyan;
+	box-shadow: inset 0 -2.5px 0 0 cyan; 
+  }
+
+/*------> CAROUSEL*/
+
+.carousel-display{
+	display: block;
+}
+
+.carousel-item{
+	min-height: 400px;
+}
+
+.carousel-inner::before{
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index: 1;
+}
+
+  /*-------> SECCION 1*/
+.seccion-delicioso{
+	background-image:url("../multimedia/imagenes/delicioso.jpg") ;
+}
+
+.fresco-title{
+	font-size: 48px
+}
+
+  .icons-social-networks a{
+	--size:40px;
+	width:var(--size);
+	height: var(--size);
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+  }
+
+  .icons-social-networks a img{
+	transition: all 300ms ease-in-out;
+    width: 30px;
+  }
+  /*------> SECCION 2*/
+  .personaliza{
+	background-color: whitesmoke;
+	height: 200px;
+  }
+  /*------> SECCION 4*/
+  .menu{
+	background: url(../multimedia/imagenes/menu.png);
+	height: 200px;
+  }
+  /*------> FOOTER*/
+.footer-icons{
+	background-color: black;
+}
+.nosotros-ul {
+    list-style: none;
+}
+
+.icons-social a img{
+	transition: all 300ms ease-in-out;
+    width: 30px;
+  }
+
+.font-size {
+	font-size: 10px;
+}
+
+.p-margin{
+	margin-bottom: 0px;
+}
+
+.footer-title-size{
+	font-size: 11px;
+}
+
+  /*------>PAGINA NOSOTROS*/
+  .sobre-nosotros{
+	background: url("../multimedia/imagenes/imagen_nosotros_nuevo.jpg");
+  }
+  .elegirnos-ul li img{
+	transition: all 300ms ease-in-out;
+    width: 40px;
+  }
+
+  /*------> PAGINA CONTACTO*/
+.contactanos{
+	background: url("../multimedia/imagenes/imagen_formulario.jpg");
+}
+
+/*------> PAGINA SUCURSALES*/
+
+.zona-title{
+	font-size: 13px;
+}
+
+.barrio-title{
+	font-size: 12px;
+	color: red;
+}
+
+.datos-size{
+	font-size: 11px;
+}
+
+/*------> PAGINA PRODUCTOS*/
+.card img{
+	width: 150px;
+	height: 150px;
+}
+
+@media screen and (min-width: 500px) and (max-width: 1029px){
+	.carousel-display{
+		display: none;
+	}
+	.form-bakground{
+		background-color: black;
+		height: 400px;
+		margin-top: 25px;
+	}
+}
